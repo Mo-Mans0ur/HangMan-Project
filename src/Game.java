@@ -1,0 +1,52 @@
+
+
+import java.util.ArrayList;
+
+public class Game extends FileReader{
+    static ArrayList<Character> attempts = new ArrayList<Character>();
+    private String word;
+    //private int wrongGuesses = 0;
+
+
+ public Game(String word){
+        this.word = word;
+    }
+
+    public String getWord() {
+        return word;
+    }
+
+
+
+    public void userInput() {
+        while (true) {
+            System.out.println();
+
+            System.out.println("please input a letter below, \nremember to think twice: ");
+
+            String guess = HangManMain.scanner.nextLine();
+            attempts.add(guess.charAt(0));
+
+
+            if () {
+                System.out.println("nice!!, he get to live another day!!");
+                break;
+            }
+
+
+
+        }
+    }
+
+    public static void convertWordsToLines(String word) {
+
+        for (int i = 0; i < word.length(); i++) {
+            if (attempts.contains(word));
+            System.out.print(word.replaceAll(word,("{_}")));
+
+        }
+        System.out.println();
+    }
+
+
+}
