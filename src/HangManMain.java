@@ -11,7 +11,7 @@ public class HangManMain {
         System.out.println("|welcome to Hangman.        |\n|goodluck, try not to die 😘|");
         System.out.println("-----------------------------");
 
-        System.out.println("your word have been chosen below:");
+        System.out.println("your word have been chosen below ⬇");
 
         FileReader.getWords();
         String randomWord = FileReader.getRandomWord();
@@ -22,6 +22,21 @@ public class HangManMain {
 
         //Game.hangManImage();
        newGame.userInput();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
